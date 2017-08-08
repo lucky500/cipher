@@ -34,10 +34,11 @@ function countLetters(sentence){
   return letterConcatedToTitle;
 }
 
-console.log('countSentence:' ,countLetters(sentence));
+console.log('countSentence:' , countLetters(sentence));
 
 function reverseString(sentence){
-  var lastFunction = callFunctions(sentence);
+  var lastStop = countLetters(sentence);
+  var lastFunction = callFunctions(lastStop);
   return lastFunction.split('').reverse().join('');
 }
 
